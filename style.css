@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
+
+:root{
+    --background-1:#000000;
+    --background-2:#262323;
+    --background-3:#292525;
+    --background-4:#141425;
+    --white:#ffffffff;
+    --blue-border:#2b34e3;
+    --blur-white: #F4F5FF;
+    --special-color-1:#8c38d6;
+    --ligh-gray:#6a736c;
+    
+}
+
+/**************************base style******************************/
+.special-words{
+    color: var(--special-color-1);
+}
+hr{
+    opacity: .5;
+    margin-top: -1rem;
+}
+li{
+    list-style: none;
+}
+ul,li{
+    color: var(--blur-white);
+}
+h1,h2,h3,h4,h5,p{
+    color: var(--blur-white);
+}
+.btn-size{
+    width: 1rem;
+    height: 1rem;
+  margin-top: .1rem;
+}
+i{
+    color: var(--white);
+}
+
+.small-i{
+    font-size: .7rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+
+}
+
+body{
+    background-color: var(--background-4);
+    width: 100%;
+    height: 100vh;
+}
+/**************************base style******************************/
+/**************** reusable styles ********************/
+.gray-color{
+    color: var(--ligh-gray);
+}
+.history-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.more-margin{
+    padding-top: 1rem;
+    }
+    .main-font{
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+    /**************** reusable styles ********************/
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+}
+.navbar .logo{
+    margin: 0 1.2rem;
+}
+.navbar .lists{
+    display: flex;
+    margin-left: -2.5rem;
+}
+.navbar .lists .items{
+    color: var(--white);
+    margin: 1rem 1rem;
+
+}
+ .header-search-icon{
+   color: var(--white);
+
+  margin-top: 1rem;
+   margin-left: 10rem;
+   
+}
+.nav-btn button{
+    background: transparent;
+    padding: 1rem;
+    color: var(--white);
+    border: 1px solid var(--blue-border);
+    border-radius: 2rem;
+    width: 11rem;
+}
+.day-night-icons{
+   margin: .2rem 1rem;
+}
+
+    
+/***************** top of main section style******************/
+.top-of-main-seaction{
+   position: relative;
+}
+.text-and-btns{
+    padding: 5rem;
+}
+.top-of-main-seaction .text-and-btns .big-text {
+    color: var(--blur-white);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.top-of-main-seaction .text-and-btns .small-text{
+    color: var(--blur-white);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.main-btn-classes .btn-1 , .btn-2{
+    background: transparent;
+    padding: .8rem;
+    color: var(--white);
+    border: 1px solid var(--blue-border);
+    border-radius: 2rem;
+    width: 8rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.main-btn-classes .btn-2{
+    margin-left: .5rem;
+}
+.main-vector >.main-vector-img{
+    position: absolute;
+    margin-left: 48rem;
+    margin-top: -30rem;
+    height: 35rem;
+ 
+}
+
+/********************** second main section include wallets options***************************/
+.wallets-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 8rem 0;
+}
+.wallets-container .card{
+    text-align: center;
+}
+.wallets-container .card .wallet-h1,.wallet-p{
+    margin: .7rem 0;
+}
+.wallets-container > .card .wallet-p{
+    font-size: .8rem;
+}
+/********************** third section include NFTs cards detail*******************/
+.live-actions{
+    width: 100%;
+    height: 90vh;
+    background: var(--background-1);
+}
+.live-actions-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 .5rem;
+    padding: 1.5rem 0;
+}
+.live-actions-special-text{
+    border-bottom: .5px solid var(--special-color-1);
+}
+.live-actions-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.NFTs-card{
+    width: 15rem;
+    height: 25rem;
+    background: var(--background-2);
+   border-radius: 1.2rem;
+ 
+}
+.NFTs-card .NFTs-card-img{
+    height: 12rem;
+   margin:1.4rem;
+ 
+}
+
+.NFTs-card .NFTS-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3.5rem;
+ 
+}
+.NFTS-number-img{
+    background-color: var(--background-2);
+    width: 7rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem .2rem;
+}
+
+
+.NFTs-card >.NFTs-card-middle-text{
+    margin: 2rem auto;
+    text-align: center;
+}
+.NFTS-card-Creator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    margin-top: -1rem;
+}
+.NFTS-card-Creator-explain{
+  margin-left: -1.8rem;
+}
+.NFTs-card > .line{
+    color: var(--background-1);
+    margin: 1rem  auto 0 auto;
+    width: 13.5rem;
+}
+.NFTs-card-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.NFTs-card-price-texts .NFTs-card-price-texts-h5{
+    margin: 0 0 .3rem 0;
+}
+.live-actions-arrows{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.live-actions-arrows >i{
+    margin: 0 .2rem;
+} 
+.live-actions-arrows .arrow{
+    margin: 0 .6rem;
+}
+/*********************** popular collection include box image *****************/
+.popular-collection .image-container{
+    width: 27rem;
+    height: 60vh;
+    background-color: var(--background-3);
+   border-radius: 1rem;
+}
+.images-container{
+    display: flex;
+    justify-content: space-around;
+}
+.image-box-1{
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+.image-box-2{
+    display: flex;
+    justify-content: space-around;
+    padding: .3rem;
+}
+.image-container-text{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   margin: 2rem .3rem;
+}
+.image-container-texts{
+ display: flex;
+ align-items: center;
+}
+.images{
+    margin-left: -1rem;
+}
+.images .two{
+ margin-left: -1rem;
+}
+.texts{
+    margin: 0 .5rem;
+}
+.top-seller-container{
+    margin: 4rem auto;
+}
+.top-seller-image-1{
+    display: flex;
+    justify-content: space-around;
+}
+.top-seller-image-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+/****************** today picks button style*******************/
+.today-pick-btns {
+ display: flex;
+ justify-content: space-between;
+}
+
+.today-section-btn{
+    background: transparent;
+    padding: .8rem;
+    color: var(--white);
+    border: 1px solid var(--blur-white);
+    border-radius: 2rem;
+    width: 8rem;
+    text-align: center;
+    margin: 1rem .8rem;
+}
+.special-btn button{
+width: 12rem;
+padding: .4rem;
+}
+
+/***************today picks card images style*****************/
+.card-images-1{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card-images-2{
+    display: flex;
+    justify-content: space-around;
+   margin: 1rem 0;
+}
+.today-pick-last-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-btn{
+    background: transparent;
+    padding: .8rem;
+    color: var(--white);
+    border: 1px solid var(--blur-white);
+    border-radius: 2rem;
+    width: 8rem;
+    text-align: center;
+    margin: 1rem .8rem;
+  
+}
+.heart-box img{
+    margin-top: -17rem;
+    margin-left: 7rem;
+}
+/********************footer style************************/
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+   padding: 5rem 0;
+}
+.footer-logo{
+    margin-top: -.5rem;
+}
+.list-items-container{
+    display: flex;
+   
+}
+footer >.footer-container{
+ width: 100%;
+ height: 60vh;
+ background: var(--background-1);
+}
+.footer-list-items{
+    margin: 0 5rem;
+
+}
+.footer-list-item{
+    margin: 1rem 0;
+}
+.send-box{
+    border: .5px solid var(--blur-white);
+  border-right: none;
+    background: transparent;
+    padding: .8rem .2rem;
+    text-align: center;
+    width: 13rem;
+}
+.send-box-img{
+    border: .5px solid var(--blur-white);
+    padding: .64rem .7rem;
+    background-color: var(--blue-border);
+    border-left: none;
+}
+.send-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.social-media{
+    margin: 2rem 0;
+ 
+}
+.up-arrow{
+    margin-left: 81rem;
+    margin-top: -7rem;
+}
+.up-arrow-icon{
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: var(--blur-white);
+    color: var(--background-2);
+
+   
+}
